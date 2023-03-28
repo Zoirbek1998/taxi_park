@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgraund"
+
+    tools:context=".ui.detailes.rekvizit.AddCardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E6E9F8"
+            android:hint="@string/bank_nomi"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/card_fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#E6E9F8"
+            android:hint="@string/fio"
+            android:padding="20dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E6E9F8"
+            android:hint="@string/karta_raqami"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+<!--        <dev.future.taxipark.utils.maskeditText.MaskedEditText-->
+<!--            android:id="@+id/etPhoneNumber"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:inputType="number"-->
+<!--            app:keep_hint="true"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            mask:allowed_chars="1234567890"-->
+<!--            mask:mask="####-####-####-##" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/barcha_majburiy_maydonlarni_to_ldirish_kerak"
+            android:textColor="#717171"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/semi_bold_italic"
+            android:text="@string/diqqat_qiling"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_white"
+            android:fontFamily="@font/inter_regular"
+            android:padding="10dp"
+            android:text="Карта кушаётганизда факатгина карта эгасини фамилия ва исмини киритинг,акс холда программа хато беради ва пулингиз вактида утмаши мумкин."
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingVertical="14dp"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/active_color"
+            app:cornerRadius="12dp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="40dp"
+            android:textSize="16sp"
+            android:text="@string/kartani_qo_shing"/>
+
+    </LinearLayout>
+
+</FrameLayout>

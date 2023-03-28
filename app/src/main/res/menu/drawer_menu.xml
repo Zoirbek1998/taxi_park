@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_balanse"
+        android:title="@string/balans"
+        android:icon="@drawable/ic_balanse"
+        android:iconTint="@color/black"
+        
+        />
+
+    <item
+        android:id="@+id/nav_person"
+        android:title="@string/mening_tafsilotlarim"
+        android:icon="@drawable/ic_person"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/nav_card"
+        android:title="@string/pul_o_tkazish_talablari"
+        android:icon="@drawable/ic_card"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/nav_rekvisid"
+        android:title="@string/rekvizitlar"
+        android:icon="@drawable/ic_rekvisid"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/nav_bonuslar"
+        android:title="@string/bonuslar"
+        android:icon="@drawable/ic_bonus"
+        android:iconTint="@color/black"
+        />
+    <item
+        android:id="@+id/nav_brigada"
+        android:title="@string/mening_brigadam"
+        android:icon="@drawable/ic_brigada"
+        android:iconTint="@color/black"
+        />
+    <item
+        android:id="@+id/nav_bildirishnomalar"
+        android:title="@string/bildirishnomalar"
+        android:icon="@drawable/ic_navigation"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/nav_kantaktlar"
+        android:title="@string/kantakt"
+        android:icon="@drawable/ic_phone_outline"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/nav_chiqish"
+        android:title="@string/chiqish"
+        android:icon="@drawable/ic_chiqish"
+        android:iconTint="@color/black"
+        />
+</menu>

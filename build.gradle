@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+
+    }
+
+    ext {
+        lifecycle_version = "2.5.1"
+        coroutines_core_version = "1.5.0"
+        coroutines_android_version = "1.5.2"
+        dagger_version = "2.38.1"
+        okhttp_version = "3.10.0"
+        retrofit_version = "2.6.2"
+        timber_version = "4.7.1"
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
+    }
+
+
+}
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

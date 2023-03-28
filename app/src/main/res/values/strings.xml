@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Taxi Park</string>
+    <string name="bixod" translatable="false">Tizimga kirish</string>
+    <string name="register" translatable="false">Ro\ʻyxatdan o\ʻtish</string>
+    <string name="kantakt" translatable="false">Kontaktlar</string>
+    <string name="akkount" translatable="false">Accountga chiqish</string>
+    <string name="telefon_nomer" translatable="false">Telefonni kiriting</string>
+    <string name="sms" translatable="false">SMS Jonatish</string>
+    <string name="сервис" translatable="false">Xizmatga ro\'yxatdan o\'tish orqali siz rozilik bildirasiz</string>
+    <string name="pегистрация" translatable="false">Ro\ʻyxatdan o\ʻtish</string>
+    <string name="yндекс" translatable="false">Rasmiy hamkor\nYandex Taksi</string>
+    <string name="qayta_jo_natish" translatable="false">Qayta jo\'natish</string>
+    <string name="raqamni_to_g_ri_kiriting" translatable="false">* Raqamni to’g’ri kiriting</string>
+
+    <string name="keyingisi">Davom eting</string>
+    <string name="анкету">Anketani To\'ldiring</string>
+    <string name="familya">Familya</string>
+    <string name="ism">Ism</string>
+    <string name="ochistva">Otangizni Ismi</string>
+    <string name="ceria">Haydovchilik guvohnomasining seriyasi va raqami</string>
+    <string name="old_tomondan_fotosurat">Old tomondan fotosurat</string>
+    <string name="vtomobil_markasi">Avtomobil markasi</string>
+    <string name="avtomobil_modeli">Avtomobil modeli</string>
+    <string name="davlat_raqami">Davlat raqami</string>
+    <string name="texnik_pasport_seriyasi_va_raqami">Texnik pasport seriyasi va raqami</string>
+    <string name="orqa_tomonining_fotosurati">Orqa tomonining fotosurati</string>
+    <string name="texnik_pasportning_old_qismidagi_fotosurat">Texnik pasportning old qismidagi fotosurat</string>
+    <string name="texnik_pasportning_orqa_tomonidagi_fotosurat">Texnik pasportning orqa tomonidagi fotosurat</string>
+    <string name="yuborish">Yuborish</string>
+    <string name="ulanish_so_rovingiz_qabul_qilindi">Ulanish so\ʻrovingiz qabul qilindi.</string>
+    <string name="tez_orada_menejerimiz_siz_bilan_bog_lanadi">Tez orada menejerimiz siz bilan bog\'lanadi</string>
+    <string name="hech_qanday_ma_lumot_yo_q">Hech qanday ma\'lumot yo\'q!</string>
+    <string name="shartnomasi">foydalanuvchi shartnomasi</string>
+    <string name="pin">PIN - kod</string>
+    <string name="pin_kod_bilan_keling">PIN - kod bilan keling</string>
+    <string name="telefon_uchun_pin_kiriting">Telefon uchun PIN kiriting</string>
+    <string name="yandex_taxi_rasmiy_hamkori">Yandex Taxi rasmiy hamkori</string>
+    <string name="kontaktlar">Kontaktlar</string>
+    <string name="telefon">Telefon</string>
+    <string name="telegram">Telegram</string>
+    <string name="instagram">Instagram</string>
+
+    <string name="official_partner_nyandex_taxi_a1">Official partner\nYandex Taxi “А1”</string>
+    <string name="mening_tafsilotlarim">Mening tafsilotlarim</string>
+    <string name="balans">Balans</string>
+    <string name="pul_o_tkazish_talablari">Pul o\'tkazish talablari</string>
+    <string name="rekvizitlar">Rekvizitlar</string>
+    <string name="bonuslar">Bonuslar</string>
+    <string name="mening_brigadam">Mening brigadam</string>
+    <string name="bildirishnomalar">Bildirishnomalar</string>
+    <string name="chiqish">Chiqish</string>
+    <string name="sizning_balansingiz">Sizning balansingiz</string>
+    <string name="balans_tarixi">Balans tarixi</string>
+    <string name="pul_olmadingizmi">Pul olmadingizmi?</string>
+    <string name="telefon_orqali_bog_lanish">Telefon orqali bog\'lanish:</string>
+    <string name="yoki_bizning_telegram_botimiz">Yoki bizning telegram botimiz:</string>
+    <string name="pulni_yechib_olish_nuchun_ariza">Pulni yechib olish\nuchun ariza</string>
+    <string name="bizning_taksi_kompaniyamiz_sizni_ntaklif_qiladi">Bizning taksi kompaniyamiz sizni\ntaklif qiladi</string>
+    <string name="ha_to_g_ri">Ha to\'g\'ri</string>
+    <string name="yo_q_to_g_ri_emas">Yo\'q, to\'g\'ri emas</string>
+    <string name="keyingi">Keyingi</string>
+    <string name="boshlash">Boshlash</string>
+    <string name="raqam_toliq_emas">Raqam to\'liq emas</string>
+    <string name="login_parol">Login yoki parol xato</string>
+    <string name="royxatdan_otgan">Bu raqam avval ro\'yxatdan o\'tgan</string>
+    <string name="sizga_yuborgan_kodni_raqamga_kiriting">Sizga yuborgan kodni raqamga kiriting</string>
+    <string name="eng_kamida4">Eng kamida 4 ta belgi bo\'lishi kerak</string>
+    <string name="bush_bulmasin">Bo\'sh bo\'lmasin</string>
+    <string name="kartani_qo_shing">Kartani qo\'shing</string>
+    <string name="nomer_card">Karta raqami</string>
+    <string name="taxrirlamoq">Taxrirlamoq</string>
+    <string name="o_chirmoq">O\'chirmoq</string>
+    <string name="bank_nomi">Bank nomin *</string>
+    <string name="fio">FIO *</string>
+    <string name="karta_raqami">Karta raqami *</string>
+    <string name="barcha_majburiy_maydonlarni_to_ldirish_kerak">Barcha majburiy maydonlarni to\'ldirish kerak!</string>
+    <string name="diqqat_qiling">Diqqat qiling!</string>
+    <string name="mablag_larni_olib_qo_yish_bo_yicha_komissiya_0">Mablag\'larni olib qo\'yish bo\'yicha komissiya</string>
+    <string name="bekor_qilish">Bekor qilish</string>
+    <string name="otkazilgan">O\'tkazilgan</string>
+    <string name="pulni_yechib_olish_uchun_ariza">Pulni yechib olish uchun ariza</string>
+    <string name="familiyasi_va_ismi">Familiyasi va ismi</string>
+    <string name="haydovchi_id">Haydovchi ID</string>
+    <string name="do_stni_taklif_qilish_uchun">Do\'stni taklif qilish uchun</string>
+    <string name="so_m"> so\'m</string>
+    <string name="sana">Sana</string>
+    <string name="vaqt">Vaqt</string>
+    <string name="pul_olish_hisobi">Pul olish hisobi</string>
+    <string name="hisobni_to_ldirish">Hisobni to\'ldirish</string>
+    <string name="holat">Holat</string>
+    <string name="sharh">Sharh</string>
+    <string name="yopish">Yopish</string>
+    <string name="pul_yechib_olish">Pul yechib olish</string>
+    <string name="hello_blank_fragment">salom</string>
+    <string name="ariza_miqdori_minimaldan_kam">Ariza miqdori minimaldan kam</string>
+    <string name="kunlik_chegara">Kunlik chegara</string>
+    <string name="maxsimal_ariza">Maxsimal ariza</string>
+    <string name="minimal_ariza">Minimal ariza</string>
+    <string name="minimal_balans">Minimal balans</string>
+    <string name="olib_tashlash_komissiyasi">Olib tashlash komissiyasi</string>
+    <string name="minimal_komissiya">Minimal komissiya</string>
+    <string name="umumiy_xizmatlar">Umumiy xizmatlar :</string>
+    <string name="umumiy_qiymat">Umumiy qiymat :</string>
+    <string name="sizning_bonusingiz">Sizning bonusingiz :</string>
+    <string name="xizmatlar">Xizmatlar</string>
+    <string name="jami_bonus_miqdori">Jami bonus miqdori:</string>
+    <string name="buyurtmalar_tarxi">Buyurtmalar tarxi</string>
+    <string name="yandex_taksi_buyurtmalar">Yandex taksi - buyurtmalar</string>
+    <string name="buyurtma_raqami">Buyurtma raqami</string>
+    <string name="haydovchilik_guvohnomasining_seriyasi_va_raqami">Haydovchilik guvohnomasining seriyasi va raqami</string>
+    <string name="parolni_unutdingizmi">Parolni unutdingizmi</string>
+    <string name="so_m_2">So\'m</string>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#f3f3f3</color>
+    <color name="active_color">#140955</color>
+    <color name="edt_back">#E9E9E9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#898A8D</color>
+    <color name="btn_otpravit">#898A8D</color>
+    <color name="link_color">#0194F4</color>
+    <color name="yellov">#FFC700</color>
+    <color name="green">#2EBD33</color>
+    <color name="logo_color">#FFD600</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true" >#e4e4e4</color>
+    <color name="red">#FF0000</color>
+    <color name="backgraund">#F3F5FF</color>
+    <color name="birigada_toolbar">#510045</color>
+</resources>

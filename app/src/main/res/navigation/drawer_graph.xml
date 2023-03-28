@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_graph"
+    app:startDestination="@id/spashFragment">
+
+    <fragment
+        android:id="@+id/nav_balanse"
+        android:name="dev.future.taxipark.ui.drawer.BalansFragment"
+        android:label="@string/balans"
+        tools:layout="@layout/fragment_balans" />
+    <fragment
+        android:id="@+id/nav_bonuslar"
+        android:name="dev.future.taxipark.ui.drawer.BonusesFragment"
+        android:label="@string/bonuslar"
+        tools:layout="@layout/fragment_bonuses" >
+        <action
+            android:id="@+id/action_nav_bonuslar_to_bonusDriversFragment"
+            app:destination="@id/bonusDriversFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_person"
+        android:name="dev.future.taxipark.ui.drawer.MoyDannixFragment"
+        android:label="@string/mening_tafsilotlarim"
+        tools:layout="@layout/fragment_moy_dannix" />
+    <fragment
+        android:id="@+id/nav_brigada"
+        android:name="dev.future.taxipark.ui.drawer.MyBrigadeFragment"
+        android:label="@string/mening_brigadam"
+        tools:layout="@layout/fragment_my_brigade" >
+        <action
+            android:id="@+id/action_nav_brigada_to_addBrigadaFragment"
+            app:destination="@id/addBrigadaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_bildirishnomalar"
+        android:name="dev.future.taxipark.ui.drawer.NavigationFragment"
+        android:label="@string/bildirishnomalar"
+        tools:layout="@layout/fragment_navigation" />
+    <fragment
+        android:id="@+id/nav_rekvisid"
+        android:name="dev.future.taxipark.ui.drawer.RekvizitlarFragment"
+        android:label="@string/rekvizitlar"
+        tools:layout="@layout/fragment_rekvizitlar" >
+        <action
+            android:id="@+id/action_nav_rekvisid_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requisiteFragment"
+        android:name="dev.future.taxipark.ui.drawer.RequisiteFragment"
+        android:label="fragment_requisite"
+        tools:layout="@layout/fragment_requisite" />
+    <fragment
+        android:id="@+id/nav_card"
+        android:name="dev.future.taxipark.ui.drawer.WithdrawalRequestsFragment"
+        android:label="@string/pul_o_tkazish_talablari"
+        tools:layout="@layout/fragment_withdrawal_requests" />
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="dev.future.taxipark.ui.detailes.rekvizit.AddCardFragment"
+        android:label="fragment_add_card"
+        tools:layout="@layout/fragment_add_card" >
+        <argument
+            android:name="card_item"
+            app:argType="dev.future.taxipark.ui.drawer.model.CardsModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/balansYechFragment"
+        android:name="dev.future.taxipark.ui.detailes.balanse.BalansYechFragment"
+        android:label="fragment_balans_yech"
+        tools:layout="@layout/fragment_balans_yech" />
+    <fragment
+        android:id="@+id/secessMoneyFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.successAndError.SecessMoneyFragment"
+        android:label="fragment_secess_money"
+        tools:layout="@layout/fragment_secess_money" >
+        <action
+            android:id="@+id/action_secessMoneyFragment_to_nav_balanse"
+            app:destination="@id/nav_balanse"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/secessMoneyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bonusDriversFragment"
+        android:name="dev.future.taxipark.ui.detailes.bonus.BonusDriversFragment"
+        android:label="fragment_bonus_drivers"
+        tools:layout="@layout/fragment_bonus_drivers" />
+    <fragment
+        android:id="@+id/bonusYechFragment2"
+        android:name="dev.future.taxipark.ui.detailes.bonus.BonusYechFragment"
+        android:label="fragment_bonus_yech"
+        tools:layout="@layout/fragment_bonus_yech" />
+    <fragment
+        android:id="@+id/hitoryTravelFragment"
+        android:name="dev.future.taxipark.ui.drawer.HitoryTravelFragment"
+        android:label="fragment_hitory_travel"
+        tools:layout="@layout/fragment_hitory_travel" />
+    <fragment
+        android:id="@+id/orderHistoryDetailesFragment"
+        android:name="dev.future.taxipark.ui.detailes.history.OrderHistoryDetailesFragment"
+        android:label="fragment_order_history_detailes"
+        tools:layout="@layout/fragment_order_history_detailes" />
+    <fragment
+        android:id="@+id/pinActiveFragment2"
+        android:name="dev.future.taxipark.ui.registeration.ui.PinView.PinActiveFragment"
+        android:label="fragment_pin_active"
+        tools:layout="@layout/fragment_pin_active" >
+        <action
+            android:id="@+id/action_pinActiveFragment2_to_nav_balanse"
+            app:destination="@id/nav_balanse"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/pinActiveFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_pinActiveFragment2_to_savePinFragment"
+            app:destination="@id/savePinFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/pinActiveFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBrigadaFragment"
+        android:name="dev.future.taxipark.ui.detailes.brigada.AddBrigadaFragment"
+        android:label="fragment_add_brigada"
+        tools:layout="@layout/fragment_add_brigada" />
+    <fragment
+        android:id="@+id/nav_kantaktlar"
+        android:name="dev.future.taxipark.ui.registeration.ui.kantakt.KantaktFragment"
+        android:label="fragment_kantakt"
+        tools:layout="@layout/fragment_kantakt" />
+
+
+    <fragment
+        android:id="@+id/registerFilterFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.filtterRegister.RegisterFilterFragment"
+        android:label="fragment_register_filter"
+        tools:layout="@layout/fragment_register_filter" >
+        <action
+            android:id="@+id/action_registerFilterFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/registerFilterFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_registerFilterFragment_to_nav_kantaktlar"
+            app:destination="@id/nav_kantaktlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPhoneFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.registerPhone.RegisterPhoneFragment"
+        android:label="fragment_register_phone"
+        tools:layout="@layout/fragment_register_phone" >
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_registerCodeFragment"
+            app:destination="@id/registerCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCodeFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.registerCode.RegisterCodeFragment"
+        android:label="fragment_register_code"
+        tools:layout="@layout/fragment_register_code" >
+        <action
+            android:id="@+id/action_registerCodeFragment_to_savePinFragment"
+            app:destination="@id/savePinFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/registerCodeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.successAndError.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_successFragment_to_savePinFragment"
+            app:destination="@id/savePinFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/successFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.successAndError.ErrorFragment"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error" />
+    <fragment
+        android:id="@+id/savePinFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.PinView.SavePinFragment"
+        android:label="fragment_save_pin"
+        tools:layout="@layout/fragment_save_pin" >
+        <action
+            android:id="@+id/action_savePinFragment_to_pinActiveFragment2"
+            app:destination="@id/pinActiveFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/savePinFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/spashFragment"
+        android:name="dev.future.taxipark.ui.SplashFragment"
+        android:label="fragment_spash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_spashFragment_to_registerFilterFragment"
+            app:destination="@id/registerFilterFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/spashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_spashFragment_to_pinActiveFragment2"
+            app:destination="@id/pinActiveFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/spashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_spashFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+
+
+</navigation>

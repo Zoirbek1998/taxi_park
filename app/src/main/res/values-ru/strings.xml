@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taxi Park</string>
+    <string name="bixod" translatable="false">Вход</string>
+    <string name="register" translatable="false">Регистрация</string>
+    <string name="kantakt" translatable="false">Контакты</string>
+    <string name="akkount" translatable="false">Вход в аккаунт</string>
+    <string name="telefon_nomer" translatable="false">Введите номер телефона</string>
+    <string name="sms" translatable="false">Отправить SMS</string>
+    <string name="сервис" translatable="false">Регистрируясь в сервис,вы соглашаетесь с</string>
+    <string name="pегистрация" translatable="false">Регистрация</string>
+    <string name="yндекс" translatable="false">Официальный партнёр\nЯндекс Такси</string>
+    <string name="qayta_jo_natish" translatable="false">Qayta jo\'natish</string>
+    <string name="raqamni_to_g_ri_kiriting" translatable="false">* Raqamni to’g’ri kiriting</string>
+
+    <string name="keyingisi">Продолжить</string>
+    <string name="анкету">Заполните анкету</string>
+    <string name="familya">Фамилия</string>
+    <string name="ism">Имя</string>
+    <string name="ochistva">Отчества</string>
+    <string name="ceria">Серия и номер водительское удостоверение</string>
+    <string name="old_tomondan_fotosurat">Фото с переди В/У</string>
+    <string name="vtomobil_markasi">Марка авто</string>
+    <string name="avtomobil_modeli">Модель авто</string>
+    <string name="davlat_raqami">Гос номер</string>
+    <string name="texnik_pasport_seriyasi_va_raqami">Серия и номер техпаспорта</string>
+    <string name="orqa_tomonining_fotosurati">Фото задняя стороны В/У</string>
+    <string name="texnik_pasportning_old_qismidagi_fotosurat">Фото с переди техпаспорта</string>
+    <string name="texnik_pasportning_orqa_tomonidagi_fotosurat">Фото задняя техпаспорта</string>
+    <string name="yuborish">Отправить</string>
+    <string name="ulanish_so_rovingiz_qabul_qilindi">Ваша заявка на подключения принята</string>
+    <string name="tez_orada_menejerimiz_siz_bilan_bog_lanadi">Скоро наши менеджера свяжеться с вами</string>
+    <string name="hech_qanday_ma_lumot_yo_q">Нет данных !</string>
+    <string name="shartnomasi">пользовательским соглашением</string>
+    <string name="pin">PIN - код</string>
+    <string name="pin_kod_bilan_keling">Придумайте PIN - код</string>
+    <string name="telefon_uchun_pin_kiriting">Введите PIN-код для телефона</string>
+    <string name="yandex_taxi_rasmiy_hamkori">Официальный партнёр Яндекс Такси</string>
+    <string name="kontaktlar">Контакты</string>
+    <string name="telefon">Телефон</string>
+    <string name="telegram">Телеграм</string>
+    <string name="instagram">Инстаграм</string>
+    <string name="official_partner_nyandex_taxi_a1">Официальный партнёр\nЯндекс Такси  “А1”</string>
+    <string name="mening_tafsilotlarim">Мои данные</string>
+    <string name="balans">Баланс</string>
+    <string name="pul_o_tkazish_talablari">Заявки на вывод</string>
+    <string name="rekvizitlar">Реквизиты</string>
+    <string name="bonuslar">Бонусы</string>
+    <string name="mening_brigadam">Мой бригада</string>
+    <string name="bildirishnomalar">Уведомления</string>
+    <string name="chiqish">выход</string>
+    <string name="sizning_balansingiz">Ваш баланс</string>
+    <string name="balans_tarixi">История баланса</string>
+    <string name="pul_olmadingizmi">Не пришли денежные средства?</string>
+    <string name="telefon_orqali_bog_lanish">Обратитесь по тел:</string>
+    <string name="yoki_bizning_telegram_botimiz">Или наш телеграм бот:</string>
+    <string name="pulni_yechib_olish_nuchun_ariza">Заявка на вывод денег</string>
+    <string name="bizning_taksi_kompaniyamiz_sizni_ntaklif_qiladi">Вас приглашает наш\nтаксопарк</string>
+    <string name="ha_to_g_ri">Да,верно</string>
+    <string name="yo_q_to_g_ri_emas">Нет,не верно</string>
+    <string name="keyingi">Следующий</string>
+    <string name="boshlash">Начинать</string>
+    <string name="raqam_toliq_emas">Неполный номер</string>
+    <string name="login_parol">Неверный логин или пароль</string>
+    <string name="royxatdan_otgan">Этот номер был ранее зарегистрирован</string>
+    <string name="sizga_yuborgan_kodni_raqamga_kiriting">Введите код,который мы отправили вам на номер</string>
+    <string name="eng_kamida4">Должно быть не менее 4 символов</string>
+    <string name="bush_bulmasin">Поле должно быть заполнено</string>
+    <string name="kartani_qo_shing">Добавить карту</string>
+    <string name="nomer_card">Номер карты</string>
+    <string name="taxrirlamoq">Редактировать</string>
+    <string name="o_chirmoq">удалить</string>
+    <string name="bank_nomi">Названия банка *</string>
+    <string name="fio">Фамилия Имя Отчества *</string>
+    <string name="karta_raqami">Номер карты *</string>
+    <string name="barcha_majburiy_maydonlarni_to_ldirish_kerak">Необходимо заполнить все обязательные поля!</string>
+    <string name="diqqat_qiling">Oбратите внимание</string>
+    <string name="mablag_larni_olib_qo_yish_bo_yicha_komissiya_0">Комиссия за вывод денежных средств</string>
+    <string name="bekor_qilish">Отменить</string>
+    <string name="otkazilgan">Проведён</string>
+    <string name="pulni_yechib_olish_uchun_ariza">Заявка на вывод денег</string>
+    <string name="familiyasi_va_ismi">Фамилия и Имя</string>
+    <string name="haydovchi_id">ID водителя</string>
+    <string name="do_stni_taklif_qilish_uchun">Пригласить друга</string>
+    <string name="so_m">cум</string>
+    <string name="sana">Дата</string>
+    <string name="vaqt">Время</string>
+    <string name="pul_olish_hisobi">Счёт списания</string>
+    <string name="hisobni_to_ldirish">Счёт пополнения</string>
+    <string name="holat">Статус</string>
+    <string name="sharh">Коментарий</string>
+    <string name="yopish">Закрыт</string>
+    <string name="pul_yechib_olish">Вывод среств</string>
+    <string name="ariza_miqdori_minimaldan_kam">Сумма заявки меньше минимальной</string>
+    <string name="kunlik_chegara">Суточный лимит</string>
+    <string name="maxsimal_ariza">Максимальная заявка</string>
+    <string name="minimal_ariza">Минимальная заявка</string>
+    <string name="minimal_balans">Неснижаемый остаток</string>
+    <string name="olib_tashlash_komissiyasi">Комиссия на вывод</string>
+    <string name="minimal_komissiya">Минимальная комиссия</string>
+    <string name="umumiy_xizmatlar">Общая поездки :</string>
+    <string name="umumiy_qiymat">Общая сумма :</string>
+    <string name="sizning_bonusingiz">Ваш бонус :</string>
+    <string name="xizmatlar">Поездки</string>
+    <string name="jami_bonus_miqdori">Общая сумма бонуса :</string>
+    <string name="buyurtmalar_tarxi">История поездок</string>
+    <string name="yandex_taksi_buyurtmalar">Яндекс такси  -  поездки</string>
+    <string name="buyurtma_raqami">Номер заказа</string>
+    <string name="haydovchilik_guvohnomasining_seriyasi_va_raqami">Серия и номер водительское удостоверение</string>
+    <string name="parolni_unutdingizmi">Забыли пароль</string>
+    <string name="so_m_2">Сом</string>
+
+</resources>

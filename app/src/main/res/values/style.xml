@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TaxiPark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/active_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/active_color</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <declare-styleable name="MaskedEditText">
+        <attr name="mask" format="string" />
+        <attr name="allowed_chars" format="string" />
+        <attr name="enable_ime_action" format="boolean" />
+        <attr name="denied_chars" format="string" />
+        <attr name="char_representation" format="string" />
+        <attr name="keep_hint" format="boolean" />
+    </declare-styleable>
+
+    <style name="editTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:layout_height">42dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/register_filter_button</item>
+        <item name="android:backgroundTint">@color/edt_back</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:translationY">-0.94sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">8dp</item>
+    </style>
+
+    <style name="AppTheme.GreyButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/btn_otpravit</item>
+        <item name="background">@drawable/ripple_green_effect</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:translationY">-0.94sp</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">12dp</item>
+    </style>
+
+    <style name="AppTheme.ActiveButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/active_color</item>
+        <item name="background">@drawable/ripple_green_effect</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">12sp</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">@color/active_color</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/mtrl_textinput_default_box_stroke_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">@color/active_color</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="strokeColor">@color/mtrl_textinput_default_box_stroke_color</item>
+        <item name="colorPrimary">@color/mtrl_textinput_default_box_stroke_color</item>
+    </style>
+
+    <style name="CustomTextItems" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+</resources>

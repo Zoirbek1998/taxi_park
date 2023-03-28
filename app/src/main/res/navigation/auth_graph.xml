@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_graph"
+    app:startDestination="@id/registerFilterFragment">
+
+    <fragment
+        android:id="@+id/registerFilterFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.filtterRegister.RegisterFilterFragment"
+        android:label="fragment_register_filter"
+        tools:layout="@layout/fragment_register_filter" >
+        <action
+            android:id="@+id/action_registerFilterFragment_to_kantaktFragment"
+            app:destination="@id/kantaktFragment" />
+        <action
+            android:id="@+id/action_registerFilterFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPhoneFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.registerPhone.RegisterPhoneFragment"
+        android:label="fragment_register_phone"
+        tools:layout="@layout/fragment_register_phone" >
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_registerCodeFragment"
+            app:destination="@id/registerCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCodeFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.registerCode.RegisterCodeFragment"
+        android:label="fragment_register_code"
+        tools:layout="@layout/fragment_register_code" >
+        <action
+            android:id="@+id/action_registerCodeFragment_to_savePinFragment"
+            app:destination="@id/savePinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFullFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.register.registerFull.RegisterFullFragment"
+        android:label="fragment_register_full"
+        tools:layout="@layout/fragment_register_full" />
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.successAndError.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.successAndError.ErrorFragment"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error" />
+    <fragment
+        android:id="@+id/savePinFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.PinView.SavePinFragment"
+        android:label="fragment_save_pin"
+        tools:layout="@layout/fragment_save_pin" />
+    <fragment
+        android:id="@+id/kantaktFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.kantakt.KantaktFragment"
+        android:label="fragment_kantakt"
+        tools:layout="@layout/fragment_kantakt" />
+    <fragment
+        android:id="@+id/accessPhoneFragment"
+        android:name="dev.future.taxipark.ui.registeration.ui.access.AccessPhoneFragment"
+        android:label="fragment_access_phone"
+        tools:layout="@layout/fragment_access_phone" />
+</navigation>

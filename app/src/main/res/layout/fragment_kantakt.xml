@@ -21,7 +21,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-
                 android:orientation="vertical">
 
                 <ImageView
@@ -42,7 +41,7 @@
                     android:text="@string/yandex_taxi_rasmiy_hamkori"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <ImageView
@@ -70,7 +69,7 @@
                 android:layout_weight="1"
                 android:text="@string/kontaktlar"
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -108,7 +107,7 @@
                         android:fontFamily="@font/medium"
                         android:text="@string/telefon"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -139,7 +138,7 @@
                         android:fontFamily="@font/medium"
                         android:text="@string/telegram"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -170,7 +169,7 @@
                         android:fontFamily="@font/medium"
                         android:text="WhatsApp"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -201,7 +200,7 @@
                         android:fontFamily="@font/medium"
                         android:text="@string/instagram"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />

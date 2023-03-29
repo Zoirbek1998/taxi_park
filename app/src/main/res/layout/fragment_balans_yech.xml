@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/backgraund"
     android:layout_height="match_parent"
     tools:context=".ui.detailes.balanse.BalansYechFragment">
 
@@ -33,9 +34,9 @@
                     android:background="@color/transparent"
                     android:hint="от  30 000  до 900"
                     android:padding="10dp"
-
                     android:textColor="@color/white"
                     android:textColorHint="#C0C0C0"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/img_prasent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +71,7 @@
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/inter_regular"
                     android:textColor="@color/white"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/bottom_solid" />
 
@@ -118,10 +119,7 @@
                     android:gravity="center"
                     android:text="@string/bekor_qilish"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-
-                    />
+                    android:textColor="@color/black" />
 
                 <View
                     android:layout_width="0dp"
@@ -136,9 +134,7 @@
                     android:backgroundTint="@color/active_color"
                     android:fontFamily="@font/inter_regular"
                     android:text="@string/yuborish"
-
                     android:textAllCaps="false"
-                    android:textSize="14sp"
                     app:cornerRadius="5dp" />
 
             </LinearLayout>

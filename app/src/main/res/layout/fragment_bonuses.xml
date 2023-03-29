@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgraund"
     tools:context=".ui.drawer.BonusesFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -18,56 +19,55 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:orientation="vertical">
 
 
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/birigada_toolbar"
-              >
-              <androidx.cardview.widget.CardView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginHorizontal="14dp"
-                  android:layout_marginVertical="20dp"
-                  app:cardCornerRadius="10dp"
-                  app:cardElevation="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/birigada_toolbar">
 
-                  <LinearLayout
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:gravity="center"
-                      android:orientation="horizontal"
-                      android:padding="20sp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginVertical="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="20sp">
 
 
+                            <TextView
+                                android:id="@+id/balanse_summa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/medium"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="32sp" />
 
-                      <TextView
-                          android:id="@+id/balanse_summa"
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_marginLeft="15dp"
-                          android:layout_weight="1"
-                          android:fontFamily="@font/medium"
-                          android:text=""
-                          android:textColor="@color/black"
-                          android:textSize="32sp" />
+                        </LinearLayout>
 
-                  </LinearLayout>
-
-              </androidx.cardview.widget.CardView>
-          </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnBonuseYech"
                     style="@style/AppTheme.ActiveButton"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/birigada_toolbar"
                     android:fontFamily="@font/medium"
                     android:text="@string/pul_yechib_olish"
-                    android:backgroundTint="@color/birigada_toolbar"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />

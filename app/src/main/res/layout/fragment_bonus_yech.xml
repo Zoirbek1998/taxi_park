@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgraund"
     tools:context=".ui.detailes.bonus.BonusYechFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -32,7 +33,7 @@
                     android:background="@color/transparent"
                     android:hint="от  30 000  до 900"
                     android:padding="10dp"
-
+                    android:textSize="25sp"
                     android:textColor="@color/white"
                     android:textColorHint="#C0C0C0"
                     app:layout_constraintBottom_toBottomOf="parent"

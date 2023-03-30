@@ -33,6 +33,7 @@
                     android:background="@color/transparent"
                     android:hint="от  30 000  до 900"
                     android:padding="10dp"
+                    android:inputType="number"
                     android:textSize="25sp"
                     android:textColor="@color/white"
                     android:textColorHint="#C0C0C0"

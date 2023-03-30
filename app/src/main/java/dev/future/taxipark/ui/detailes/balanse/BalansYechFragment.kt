@@ -30,7 +30,8 @@ import dev.future.taxipark.ui.drawer.viewModel.OrderViewModel
 import dev.future.taxipark.utils.Status
 import dev.future.taxipark.utils.sharedPref.SaveUserInformation
 
-class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewModel>(),MoneyTakingAdapter.MoneyCallBack {
+class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewModel>(),
+    MoneyTakingAdapter.MoneyCallBack {
 
     var limit: Limits? = null
     var cardItem: CardsItem? = null
@@ -74,20 +75,21 @@ class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewMode
     }
 
     private fun initView() = with(binding) {
+        comisya.text = "${getString(R.string.mablag_larni_olib_qo_yish_bo_yicha_komissiya_0)} 1000"
 
         pageBack.setOnClickListener {
             findNavController().popBackStack()
         }
         moneyCreate.setOnClickListener {
-            if (cardItem?.id == null){
+            if (cardItem?.id == null) {
                 snackBar("Iltimos cartani tanlang!")
-            }else{
+            } else {
                 var summa = binding.balanseSumma.text.toString().toInt()
-                if (summa< limit?.minBalance!!){
+                if (summa < limit?.minBalance!!) {
                     snackBar("Iltimos ${limit?.minBalance!!} so'mdan baland summa kiriting")
-                }else if(summa > limit?.maxLimit!!) {
+                } else if (summa > limit?.maxLimit!!) {
                     moneyCreatView()
-                }else{
+                } else {
                     snackBar("Iltimos ${limit?.maxLimit!!} so'mdan baland summa kiriting")
                 }
 
@@ -104,6 +106,40 @@ class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewMode
             override fun afterTextChanged(s: Editable?) {
 
                 Log.e("TEXT", " ${s}")
+
+                if (s.toString().isNotEmpty()) {
+
+                    if (s.toString().toInt() <= limit?.minBalance!!) {
+                        comisya.setTextColor(
+                            ContextCompat.getColor(
+                                requireContext(),
+                                R.color.yellov
+                            )
+                        )
+
+                        balanseSumma.setTextColor(
+                            ContextCompat.getColor(
+                                requireContext(),
+                                R.color.yellov
+                            )
+                        )
+
+                        comisya.text =
+                            "${getString(R.string.ariza_miqdori_minimaldan_kam)} (${limit?.minBalance})"
+                    }
+
+                } else {
+                    balanseSumma.setTextColor(
+                        ContextCompat.getColor(
+                            requireContext(),
+                            R.color.white
+                        )
+                    )
+
+                    comisya.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+                    comisya.text =
+                        "${getString(R.string.mablag_larni_olib_qo_yish_bo_yicha_komissiya_0)} ${limit?.minComission}"
+                }
 
 //                if (s.toString().toInt() <= limit?.minBalance!!) {
 //                    comisya.setTextColor(ContextCompat.getColor(requireContext(), R.color.yellov))
@@ -129,11 +165,12 @@ class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewMode
 
     private fun moneyCreatView() {
         var summa = binding.balanseSumma.text.toString()
-        viewModel.createMoney(SaveUserInformation.getAuthInfo().authKey.toString(),
-            moneyCreateRequest(cardItem?.id!!,summa)
-        ).observe(viewLifecycleOwner){status ->
+        viewModel.createMoney(
+            SaveUserInformation.getAuthInfo().authKey.toString(),
+            moneyCreateRequest(cardItem?.id!!, summa)
+        ).observe(viewLifecycleOwner) { status ->
 
-            when(status.status){
+            when (status.status) {
                 Status.SUCCESS -> status.data.let { response ->
                     binding.swipe.isRefreshing = false
                     findNavController().navigate(R.id.secessMoneyFragment)
@@ -184,12 +221,12 @@ class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewMode
         }
 
         with(alertDialogBinding) {
-            dailyLimit.text  = model.dailyLimit.toString().trim()+getString(R.string.so_m)
-            maxLimit.text  = model.maxLimit.toString().trim()+getString(R.string.so_m)
-            minLimit.text  = model.minLimit.toString().trim()+getString(R.string.so_m)
-            minBalance.text  = model.minBalance.toString().trim()+getString(R.string.so_m)
-            comissionPrasent.text  = model.comission.toString().trim()+"%"
-            minComission.text  = model.minComission.toString().trim()+getString(R.string.so_m)
+            dailyLimit.text = model.dailyLimit.toString().trim() + getString(R.string.so_m)
+            maxLimit.text = model.maxLimit.toString().trim() + getString(R.string.so_m)
+            minLimit.text = model.minLimit.toString().trim() + getString(R.string.so_m)
+            minBalance.text = model.minBalance.toString().trim() + getString(R.string.so_m)
+            comissionPrasent.text = model.comission.toString().trim() + "%"
+            minComission.text = model.minComission.toString().trim() + getString(R.string.so_m)
         }
 
 
@@ -205,7 +242,7 @@ class BalansYechFragment : BaseFragment<FragmentBalansYechBinding, OrderViewMode
 
     override fun setupViewBinding(
         inflater: LayoutInflater,
-        container: ViewGroup?
+        container: ViewGroup?,
     ): FragmentBalansYechBinding = FragmentBalansYechBinding.inflate(inflater, container, false)
 
     override fun onClikItem(item: CardsItem) {
